@@ -1,66 +1,48 @@
-# Tomino - 实机面试题
+# Tomino - Technical Interview
 
-这是一个基于Unity引擎开发的俄罗斯方块游戏项目，用作实机编程面试题目。
+A Unity-based Tetris game project for technical programming interviews.
 
-## 项目特性
-- 完整的游戏机制
-- 自定义UI界面  
-- 单元测试覆盖
-- 触摸和键盘输入支持
-- 移动端优化设计
-- 音效和背景音乐
+## Interview Tasks
 
+### Task 1: Fix Compilation Errors
+Fix all compilation errors in the project to ensure it builds and runs properly.
 
-## 面试题目
+### Task 2: Set Game Window to iPhone 12 Portrait Mode
+Configure Unity editor's Game window to iPhone 12 portrait resolution for mobile testing.
 
-### 题目一：修复工程编译错误
+### Task 3: Fix Pause Menu Display Issue
+Fix the pause menu not displaying when the pause button is clicked.
 
-**背景：** 当前工程存在一些编译错误，导致无法正常运行。需要先修复这些错误，才能进行后续的功能实现。
+### Task 4: Add New Tetris Shape
+Add a new tetris piece shape to the game. The traditional Tetris game has 7 classic shapes (I, O, T, S, Z, J, L).
 
-**任务：** 修复项目中的所有编译错误，确保工程能够正常编译和运行。
+**Requirements:**
+1. Design a new balanced and interesting shape
+2. Define shape data in the appropriate code files
+3. Integrate with game systems:
+   - Normal spawning and falling
+   - Proper rotation mechanics
+   - Collision detection compatibility
+   - Line clearing logic participation
 
+### Task 5: Implement Piece Rotation
+Implement clockwise rotation logic in the `RotatePiece()` method in `Assets/Tomino/Script/Model/Board.cs` at line 188 where the `// todo:rotate` comment is located.
 
-### 题目二：调整Game窗口为iPhone12竖屏模式
+### Task 6: Implement Line Clearing
+Implement the line clearing functionality when rows are completely filled.
 
-**背景：** 为了更好地测试游戏在移动设备上的表现，需要将Unity编辑器的Game窗口调整为iPhone12竖屏分辨率。
+**Requirements:**
+1. Detect full rows across the game board
+2. Remove all blocks in full rows
+3. Move blocks above cleared rows downward
+4. Return the number of cleared rows for scoring
 
-**任务：** 将Unity编辑器中的Game窗口设置为iPhone12竖屏模式，以便进行移动端适配测试。
+### Task 7: Optimize Android Package Size
+Optimize the game's images, sounds, and other resources to reduce Android package size.
 
-
-### 题目三：修复暂停界面显示问题
-
-**背景：** 游戏的暂停功能存在问题，点击暂停按钮后，暂停界面没有正确显示出来，导致用户无法看到暂停菜单和相关选项。
-
-**任务：** 找出并修复暂停界面不显示的问题，确保点击暂停按钮后能够正常显示暂停菜单。
-
-
-### 题目四：实现方块旋转功能
-
-**背景：** 当前项目已经实现了俄罗斯方块的基本功能，包括方块移动、下落、消行等，但是**方块旋转功能尚未实现**。
-
-**任务：** 请在 `Assets/Tomino/Script/Model/Board.cs` 文件的 `RotatePiece()` 方法中实现方块的顺时针旋转逻辑。
-
-**具体要求：**
-
-1. **位置：** 在 `Board.cs` 第188行的 `// todo:rotate` 注释处实现旋转逻辑
-2. **旋转方向：** 顺时针旋转90度
-
-
-### 题目五：实现行满消除功能
-
-**背景：** 俄罗斯方块的核心玩法之一是当某一行被方块完全填满时，该行应该被消除，上方的所有方块向下移动。
-
-**任务：** 请找到相关的空方法，完成行满消除的逻辑。
-
-**具体要求：**
-
-1. **检测满行：** 遍历游戏板的每一行，检测哪些行被方块完全填满
-2. **消除满行：** 移除满行中的所有方块
-3. **方块下移：** 将满行上方的所有方块向下移动相应的行数
-4. **返回消除行数：** 方法需要返回本次消除的行数，用于计分
-
-
-
+**Requirements:**
+1. Analyze current assets (images, audio, textures)
+2. Apply optimizations: compression, format changes
 
 ## Screenshots
 
