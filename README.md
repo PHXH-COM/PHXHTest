@@ -8,7 +8,7 @@ A Unity-based Tetris game project for technical programming interviews.
 Fix all compilation errors in the project to ensure it builds and runs properly.
 
 ### Task 2: Set Game Window to iPhone 12 Portrait Mode
-Configure Unity editor's Game window to iPhone 12 portrait resolution for mobile testing.
+Switch the build platform to iOS and configure Unity editor's Game window resolution to iPhone 12 portrait mode (1170x2532) for mobile testing.
 
 ### Task 3: Fix Pause Menu Display Issue
 Fix the pause menu not displaying when the pause button is clicked.
