@@ -21,9 +21,9 @@ Add a new tetris piece shape to the game. The traditional Tetris game has 7 clas
 2. Define shape data in the appropriate code files
 3. Integrate with game systems:
    - Normal spawning and falling
-   - Proper rotation mechanics
    - Collision detection compatibility
-   - Line clearing logic participation
+
+**Note:** Rotation functionality will be implemented in Task 5, and line clearing will be implemented in Task 6, so you don't need to test these features for this task.
 
 ### Task 5: Implement Piece Rotation
 Implement clockwise rotation logic in the `RotatePiece()` method in `Assets/Tomino/Script/Model/Board.cs` at line 188 where the `// todo:rotate` comment is located.
